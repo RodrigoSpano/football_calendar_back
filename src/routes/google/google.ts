@@ -13,4 +13,11 @@ router.get(
     controllers.createTokens(req, res)
 )
 
+router.post('/calendar', (req: Request, res: Response) =>
+  controllers.setCalendarEvent(req, res)
+)
+
+router.get('/calendar/create', (req: Request, res: Response) =>
+  controllers.setCalendarEvent(req, res)
+)
 export default router
